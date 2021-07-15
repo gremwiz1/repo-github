@@ -14,14 +14,14 @@ function ColoredUserpic({ src, size, margin, backgroundColor, colors,
         <div className="border-gradient" onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             style={{
-                width: size + margin + colorWidth,
-                height: size + margin + colorWidth,
+                width: size,
+                height: size,
                 background: `linear-gradient(to right, 
                     ${colorsLinearGradient})`
             }}>
             <img className="avatar" alt="аватар" src={src}
                 style={{
-                    width: size, height: size, borderWidth: margin,
+                    width: size, height: size, borderWidth: margin, padding: colorWidth,
                     borderColor: backgroundColor
                 }} />
         </div>
